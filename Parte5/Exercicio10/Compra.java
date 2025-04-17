@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.Scanner;
 
 class Compra {
+    
     private String produto;
     private int quantidade;
     private double precoUnitario;
