@@ -1,4 +1,4 @@
-package Questão9;
+package Parte4.Exercicio9;
 
 class ContaBancaria {
     private String titular;
@@ -33,5 +33,17 @@ class ContaBancaria {
 
     public String getTitular() {
         return titular;
+    }
+
+
+    public static void main(String[] args) {
+        ContaBancaria conta = new ContaBancaria("Cauã Schlemper", 1000);
+        conta.exibirSaldo();
+        conta.depositar(500);
+        conta.exibirSaldo();
+        conta.sacar(300);
+        conta.exibirSaldo();
+        conta.sacar(1500);
+        conta.exibirSaldo();
     }
 }

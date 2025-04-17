@@ -1,4 +1,4 @@
-package Questão10;
+package Parte5.Exercicio10;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -9,7 +9,22 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class RegistroCompras {
+class Compra {
+    private String produto;
+    private int quantidade;
+    private double precoUnitario;
+
+    public Compra(String produto, int quantidade, double precoUnitario) {
+        this.produto = produto;
+        this.quantidade = quantidade;
+        this.precoUnitario = precoUnitario;
+    }
+
+    @Override
+    public String toString() {
+        return produto + ", " + quantidade + ", " + precoUnitario;
+    }
+
     private static final String FILE_NAME = "compras.txt";
 
     public static void main(String[] args) {
@@ -25,7 +40,7 @@ public class RegistroCompras {
             System.out.print("Preço unitário: ");
             double precoUnitario = scanner.nextDouble();
             scanner.nextLine();
-            
+
             compras.add(new Compra(produto, quantidade, precoUnitario));
         }
 

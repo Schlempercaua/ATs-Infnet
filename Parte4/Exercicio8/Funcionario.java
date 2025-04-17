@@ -1,4 +1,4 @@
-package Questão8;
+package Parte4.Exercicio8;
 
 class Funcionario {
     protected String nome;

@@ -1,3 +1,4 @@
+package Parte2.Exercicio3;
 import java.util.Scanner;
 
 public class Exercicio3 {
